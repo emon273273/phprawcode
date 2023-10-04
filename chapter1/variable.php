@@ -30,6 +30,18 @@ echo "value of pi" . PI; //evabe hbe
 
 //better way
 
-$constant='constant';
+$constant = 'constant';
 echo "\n";
- echo "value of pi ={$constant('PI')}";
+echo "value of pi ={$constant('PI')}";
+
+//sprintf eta return kore
+
+echo "\n";
+$output = sprintf("his name is " . $name);
+
+
+echo $output;
+
+//ekhn chaile boro output o show korte pari
+echo ("\n");
+echo (strtoupper($output));
