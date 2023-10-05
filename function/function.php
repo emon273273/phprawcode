@@ -79,6 +79,82 @@ function emon4(...$n)
 
 }
 
-echo("\n");
+echo ("\n");
 
 echo emon4(1, 2, 3, 4, 5, 6);
+
+//function er baire value nite chaile
+echo "\n";
+$name1 = "Earth";
+
+function dosomething()
+{
+
+    global $name1;
+    echo $name1;
+}
+
+dosomething();
+
+// super global name built in asociated array ase
+
+
+function dosomething1()
+{
+
+    echo $GLOBALS["name1"];
+}
+
+dosomething1();
+
+// local scope
+
+echo "\n";
+function dosomething2()
+{
+    global $name3;
+    $name3 = "this is local";
+}
+
+
+dosomething2();
+
+echo $name3; // global declare er fole ekhn call hbe
+
+
+//static scope man rekhe day
+
+
+function dosomething3()
+{
+
+    static $i;
+    $i = $i ?? 0;
+    $i++;
+    echo "\n $i";
+}
+
+dosomething3(); //1 
+dosomething3(); //2
+
+// -> static na dile always 1 dito
+
+
+//function er  return value set kore deya
+
+function a(...$y)
+{
+    $result = 0;
+
+
+    for ($i = 0; $i <= count($y); $i++) {
+
+        $result += $y[$i];
+    }
+    return $result;
+
+
+
+}
+echo "\n";
+echo a(1, 2, 3, 5,9);
