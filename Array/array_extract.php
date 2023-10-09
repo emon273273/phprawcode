@@ -48,5 +48,13 @@ $random_slice = array_slice($random, 1, Null);
 
 print_r($random_slice);
 
-//key value easily preserve hosse but jodi amon thake konotay key na thake sekhetre
+//key value easily preserve hosse but jodi amon hoy key te number sekhtre oi ager moto 0 hoye jabe tokhn true dite hbe
 
+
+echo PHP_EOL;
+$random1 = array("a" => 12, "b" => 45, "c" => 34, "d" => 55, 500 => 0);
+
+
+$random_slice1 = array_slice($random1, 1, Null, true);
+
+print_r($random_slice1);
