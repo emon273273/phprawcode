@@ -28,6 +28,7 @@ function emon(int $n)
     echo "$n";
 }
 
+echo "hello world";
 
 //emon("abc"); // error dibe karon type ta bole deya hoise
 
